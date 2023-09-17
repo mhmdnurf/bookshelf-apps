@@ -165,7 +165,6 @@ const makeBook = (bookObject) => {
       "Apakah Anda yakin ingin menghapus buku ini?"
     );
     if (isConfirmed) {
-      // Hapus buku dari array books berdasarkan ID
       const bookIndex = books.findIndex((book) => book.id === bookObject.id);
       if (bookIndex !== -1) {
         books.splice(bookIndex, 1);
